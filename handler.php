@@ -10,12 +10,16 @@
   <body>
     
     <?php
-    $diameter = "";
-    if ( isset( $_POST['myVariable'] ) ){
-      $myVariable = $_POST['myVariable'];
-    }
-    echo "<h1>My Program</h1>\n";
-    echo "<p>My Variable is = ".$myVariable."</p>\n";
+    $diameter = (float) $_POST['diameter'];
+    if (is_numeric($diameter) && $diameter > 0) {
+      $radius = $diameter / 2;
+      $area = pi() * pow($radius, 2);
+      $circumference = pi() * $diameter;
+
+      echo "<h1>Results</h1>";
+      echo "Area: " . htmlspecialchars($area) . "<br>";
+      echo "Circumference: " . htmlspecialchars($circumference) . "<br>";
+
     ?>
     
   </body>
