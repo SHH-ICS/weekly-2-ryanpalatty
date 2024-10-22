@@ -16,7 +16,7 @@
       $area = pi() * pow($radius, 2);
       $circumference = pi() * $diameter;
 
-      echo "<h1>Results</h1>";
+      echo "Results";
       echo "Area: " . htmlspecialchars($area) . "<br>";
       echo "Circumference: " . htmlspecialchars($circumference) . "<br>";
 
