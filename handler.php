@@ -16,6 +16,9 @@
       $area = pi() * pow($radius, 2);
       $circumference = pi() * $diameter;
 
+      echo '<div class="mdl-card mdl-shadow--2dp">';
+      echo '<div class="mdl-card_title"><h2 class="mdl-card_title-text">Results</h2></div>';
+      echo '<div class="mdl-card_supporting-text>';"
       echo "Results";
       echo "Area: " . htmlspecialchars($area) . "<br>";
       echo "Circumference: " . htmlspecialchars($circumference) . "<br>";
